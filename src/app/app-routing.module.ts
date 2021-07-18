@@ -7,6 +7,7 @@ const routes: Routes = [
     redirectTo: 'folder/Inbox',
     pathMatch: 'full'
   },
+  { path: '', redirectTo: 'loader', pathMatch: 'full'},
   {
     path: 'loader',
     loadChildren: () => import('./page/loader/loader.module').then( m => m.LoaderPageModule)
